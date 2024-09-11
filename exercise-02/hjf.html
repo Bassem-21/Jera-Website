@@ -15,7 +15,41 @@
 </head>
 
 <body>
- 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Changing Button</title>
+  <style>
+    .color-button {
+      background-color: #3498db; /* Initial color */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+
+    @keyframes colorChange {
+      0% { background-color: #3498db; }
+      25% { background-color: #e74c3c; }
+      50% { background-color: #f1c40f; }
+      75% { background-color: #2ecc71; }
+      100% { background-color: #3498db; }
+    }
+
+    .color-button:hover {
+      animation: colorChange 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <button class="color-button">Hover me</button>
+</body>
+</html>
+
 </body>
 
 </html>
